@@ -1,6 +1,5 @@
 import React from "react";
-// import hero_image2 from '../../images/hero2.svg';
-import "@fortawesome/fontawesome-free/css/all.min.css"; // Import Font Awesome CSS if using npm
+import "@fortawesome/fontawesome-free/css/all.min.css";
 import { motion } from "framer-motion";
 import Lottie from "lottie-react";
 import { Typewriter } from "react-simple-typewriter";
@@ -17,7 +16,6 @@ import { fromDown } from "../Animations";
 import { useScroll } from "../useScroll";
 
 const name = "Fauji Sirajuddin,";
-const title = "Frontend React-Js Developer.";
 
 const desc =
   "A dedicated professional committed to developing end-to-end solutions that foster sustainable and scalable social and technical systems, driving meaningful impact through innovation and excellence.";
@@ -50,21 +48,21 @@ const icons = [
   },
 ];
 
-// download File
-const onButtonClick = () => {
-  // using Java Script method to get PDF file
-  fetch("../../images/FAUJI_SIRAJUDDIN_RESUME.pdf").then((response) => {
-    response.blob().then((blob) => {
-      // Creating new object of PDF file
-      const fileURL = window.URL.createObjectURL(blob);
-      // Setting various property values
-      let alink = document.createElement("a");
-      alink.href = fileURL;
-      alink.download = "sample.pdf";
-      alink.click();
-    });
-  });
-};
+// // download File
+// const onButtonClick = () => {
+//   // using Java Script method to get PDF file
+//   fetch("../../images/FAUJI_SIRAJUDDIN_RESUME.pdf").then((response) => {
+//     response.blob().then((blob) => {
+//       // Creating new object of PDF file
+//       const fileURL = window.URL.createObjectURL(blob);
+//       // Setting various property values
+//       let alink = document.createElement("a");
+//       alink.href = fileURL;
+//       alink.download = "sample.pdf";
+//       alink.click();
+//     });
+//   });
+// };
 
 const Hero = () => {
   const [element, controls] = useScroll();
