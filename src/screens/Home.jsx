@@ -12,7 +12,6 @@ const Home = () => {
 
   useEffect(() => {
     controls.start();
-    g;
   }, [controls]);
 
   return (
