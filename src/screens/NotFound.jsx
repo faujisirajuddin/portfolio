@@ -1,8 +1,7 @@
+import Lottie from "lottie-react";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import error from "../images/error.gif";
 import animationData from "../images/Lotties/Notfound.json";
-import Lottie from "lottie-react";
 
 const NotFound = () => {
   return (

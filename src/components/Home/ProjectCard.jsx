@@ -1,8 +1,5 @@
-import React from "react";
-import banner from "../../images/banner.jpg";
-import banner2 from "../../images/Banner2.png";
-import project from "../../images/project.png";
 import { motion } from "framer-motion";
+import React from "react";
 import { cardAnimation } from "../Animations";
 import { useScroll } from "../useScroll";
 

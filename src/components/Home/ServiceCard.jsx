@@ -6,7 +6,7 @@ import { useScroll } from "../useScroll";
 const ServiceCard = (props) => {
   const [element, controls] = useScroll();
 
-  const { logo, title, description, icon } = props;
+  const { logo, title, description } = props;
   return (
     <motion.div
       ref={element}
