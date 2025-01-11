@@ -1,14 +1,14 @@
-import React from "react";
-import { cardAnimation } from "../Animations";
-import ProjectCard from "./ProjectCard";
 import { motion } from "framer-motion";
-import { useScroll } from "../useScroll";
-import cake from "../../images/project.png";
-import task from "../../images/task002.jpg";
+import React from "react";
+import connex from "../../images/connex-dashboard-project.png";
 import ecomshop from "../../images/Ecom-shop.png";
 import project04 from "../../images/p04.png";
-import connex from "../../images/connex-dashboard-project.png";
+import cake from "../../images/project.png";
+import task from "../../images/task002.jpg";
 import trend from "../../images/Trend (1).png";
+import { cardAnimation } from "../Animations";
+import { useScroll } from "../useScroll";
+import ProjectCard from "./ProjectCard";
 
 const Project = (props) => {
   const [element, controls] = useScroll();

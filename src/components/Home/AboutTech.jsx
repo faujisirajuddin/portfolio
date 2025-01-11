@@ -1,18 +1,17 @@
 import { Tooltip } from "antd";
+import { motion } from "framer-motion";
+import Lottie from "lottie-react";
 import React from "react";
 import css from "../../images/css.png";
-import hero_image1 from "../../images/hero1.png";
 import html from "../../images/html.png";
+import next from "../../images/icons8-next.js-96.png";
 import js from "../../images/js.png";
+import animationData from "../../images/Lotties/WhatIDo.json";
 import mui from "../../images/mui.png";
 import react from "../../images/react.png";
 import sass from "../../images/sass.png";
-import next from "../../images/icons8-next.js-96.png";
 import { cardAnimation } from "../Animations";
 import { useScroll } from "../useScroll";
-import { motion } from "framer-motion";
-import animationData from "../../images/Lotties/WhatIDo.json";
-import Lottie from "lottie-react";
 
 const AboutTech = () => {
   const [element, controls] = useScroll();

@@ -143,7 +143,6 @@ const AboutCard = () => {
           className="right"
           variants={cardAnimation}
           ref={element}
-          // variants={fromUp}
           initial={{ opacity: 0 }}
           animate={controls}
           transition={{ duration: 1 }}

@@ -1,15 +1,13 @@
 import emailjs from "@emailjs/browser";
+import { message } from "antd";
 import { motion } from "framer-motion";
 import React, { useState } from "react";
-import { message } from "antd";
 import {
   EmailSvg,
-  FacebookSvg,
   GithubSvg,
   LinkedInSvg,
   MobilePhoneSvg,
   SkypeSvg,
-  TelegramSvg,
 } from "../../svg";
 import { cardAnimation, fromDown, fromUp } from "../Animations";
 import { useScroll } from "../useScroll";
@@ -31,7 +29,6 @@ const Contacts = (props) => {
     setState({ ...state, [name]: value });
   };
 
-  // Loading Message
   const openMessage = () => {
     message.loading({
       content: "Sending...",
@@ -45,7 +42,6 @@ const Contacts = (props) => {
       });
     }, 2000);
   };
-  // Loading Message
 
   const error = (text) => {
     message.error(text, 1);
@@ -157,7 +153,6 @@ const Contacts = (props) => {
 
       <motion.div
         variants={cardAnimation}
-        // variants={fromUp}
         initial={{ opacity: 0 }}
         animate={controls}
         transition={{ duration: 0.02 }}

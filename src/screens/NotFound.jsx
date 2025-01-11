@@ -17,7 +17,6 @@ const NotFound = () => {
             objectFit: "contain",
           }}
         />
-        {/* <img src={error} alt="" /> */}
       </div>
       <span>404</span>
       <span>

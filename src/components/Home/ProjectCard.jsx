@@ -19,7 +19,6 @@ const ProjectCard = (props) => {
       className="card"
     >
       <div className="image-box">
-        {/* <img src={banner} alt="" /> */}
         <img src={props.data.image} alt="" />
       </div>
       <div
